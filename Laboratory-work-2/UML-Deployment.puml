@@ -16,6 +16,22 @@ interface "Mobile Screen"
 
 "Mobile Screen" -- dk
 
+node "<<Desktop>>" as dk1 {
+    node "<<Operating System Windows/Linux>>" {
+        node "<<Web Browser>>" {
+            component [*.js]
+        }
+    }
+}
+
+interface Keyboard
+
+interface Mouse
+
+Keyboard -- dk1
+
+Mouse -- dk1
+
 node "<<Server 1>>" as serv1 {
 	node "<<Operating System Windows>>" as l1 {
 	    node "<<Application Server Node.js>>" {
@@ -25,6 +41,8 @@ node "<<Server 1>>" as serv1 {
 }
 
 dk -- serv1
+
+dk1 -- serv1
 
 node "<<Server 2>>" as serv2 {
 	node "<<Operating System Windows>>" as l2 {
