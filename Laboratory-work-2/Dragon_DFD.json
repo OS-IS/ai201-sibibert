@@ -1,0 +1,714 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "Dragon_DFD",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Dragon_DFD",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": [
+          {
+            "position": {
+              "x": 390,
+              "y": 110
+            },
+            "size": {
+              "width": 440,
+              "height": 330
+            },
+            "shape": "trust-boundary-box",
+            "id": "61c94ba1-edf9-4030-84b4-0026abec88c7",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 672,
+              "y": 230
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Azure Database\nfor PostgreSQL"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "fdf4d82b-fb00-4506-adc5-ae4ce65115ba",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Store",
+              "name": "Azure Database\nfor PostgreSQL",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 435,
+              "y": 170
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Azure app\nservice web app"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "040dfe21-8481-4a20-a66e-220635c10f2c",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Azure app\nservice web app",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 455,
+              "y": 290
+            },
+            "size": {
+              "width": 120,
+              "height": 140
+            },
+            "attrs": {
+              "text": {
+                "text": "Azure app\nservice mobile app"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "e00b8f53-92a5-4cb5-a1e8-f0e0fc245bbb",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Azure app\nservice mobile app",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 101,
+              "y": 110
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "94185da3-39c5-4070-a78f-0589a056294e",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 101,
+              "y": 380
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Mobile client"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "1a2dccb7-be51-4793-9e77-c2388a853163",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Mobile client",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "edbe0808-66d1-4bf1-8006-ddb23182e12a",
+            "source": {
+              "cell": "040dfe21-8481-4a20-a66e-220635c10f2c"
+            },
+            "target": {
+              "cell": "94185da3-39c5-4070-a78f-0589a056294e"
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 203
+              }
+            ],
+            "labels": [
+              "Response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "4ad57a26-3818-4459-b2d6-bb4590d5e261",
+            "source": {
+              "cell": "040dfe21-8481-4a20-a66e-220635c10f2c"
+            },
+            "target": {
+              "cell": "fdf4d82b-fb00-4506-adc5-ae4ce65115ba"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 140
+              }
+            ],
+            "labels": [
+              "Request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "eb311c6f-1609-42f2-ac6b-8ad7db1ddad7",
+            "source": {
+              "cell": "fdf4d82b-fb00-4506-adc5-ae4ce65115ba"
+            },
+            "target": {
+              "cell": "040dfe21-8481-4a20-a66e-220635c10f2c"
+            },
+            "labels": [
+              "Response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "43d93b1d-bc69-477d-8b0e-28c972378350",
+                  "title": "STRIDE threat 1",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An adversary may block access to the application or API hosted on Azure App Service Web App through a denial of service attack",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "b8fea6a7-4b8e-47ef-8307-f20fd95db3a4",
+                  "title": "STRIDE threat 2",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An adversary can read sensitive data by sniffing or intercepting traffic to Azure App Service Web App",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "a47beb50-efa4-4b16-9605-0a4fccfa4f6c",
+            "source": {
+              "cell": "94185da3-39c5-4070-a78f-0589a056294e"
+            },
+            "target": {
+              "cell": "040dfe21-8481-4a20-a66e-220635c10f2c"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 110
+              },
+              {
+                "x": 320,
+                "y": 110
+              },
+              {
+                "x": 430,
+                "y": 150
+              }
+            ],
+            "labels": [
+              "Request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "62ef46dd-cc46-454e-a18a-51ca6c19dc51",
+                  "title": "STRIDE threat 3",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An adversary may block access to the application or API hosted on Azure App Service Mobile App through a denial of service attack",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "ce54e647-89ab-49c3-bf0e-15b6d3a215a4",
+            "source": {
+              "cell": "1a2dccb7-be51-4793-9e77-c2388a853163"
+            },
+            "target": {
+              "cell": "e00b8f53-92a5-4cb5-a1e8-f0e0fc245bbb"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 350
+              },
+              {
+                "x": 240,
+                "y": 320
+              },
+              {
+                "x": 320,
+                "y": 320
+              }
+            ],
+            "labels": [
+              "Request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "00bc93d0-dcc4-4a99-8d09-d907dc61d363",
+                  "title": "STRIDE threat 4",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An adversary can gain access to sensitive data by sniffing traffic from Mobile client",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "3195cd09-0e65-4090-9516-b338cb2d34e9",
+                  "title": "STRIDE threat 5",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An adversary may block access to the application or API hosted on Azure App Service Mobile App through a denial of service attack",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "67112d29-38d0-412d-be4c-8f2d0595de58",
+            "source": {
+              "cell": "e00b8f53-92a5-4cb5-a1e8-f0e0fc245bbb"
+            },
+            "target": {
+              "cell": "1a2dccb7-be51-4793-9e77-c2388a853163"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 450
+              },
+              {
+                "x": 270,
+                "y": 450
+              }
+            ],
+            "labels": [
+              "Response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b056a617-6463-4cd5-8b4e-4261da417b90",
+                  "title": "STRIDE threat 6",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An adversary may read and/or tamper with the data transmitted to Azure Postgres DB due to weak configuration",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "cc504fcb-5c79-42d2-a4bc-38079827fed3",
+            "source": {
+              "cell": "e00b8f53-92a5-4cb5-a1e8-f0e0fc245bbb"
+            },
+            "target": {
+              "cell": "fdf4d82b-fb00-4506-adc5-ae4ce65115ba"
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 300
+              }
+            ],
+            "labels": [
+              "Request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6c8f8752-9aae-42ca-9da5-8bc2ec5b5051",
+            "source": {
+              "cell": "fdf4d82b-fb00-4506-adc5-ae4ce65115ba"
+            },
+            "target": {
+              "cell": "e00b8f53-92a5-4cb5-a1e8-f0e0fc245bbb"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 400
+              }
+            ],
+            "labels": [
+              "Response"
+            ]
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 10
+  }
+}
