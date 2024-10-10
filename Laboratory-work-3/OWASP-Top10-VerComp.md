@@ -1,7 +1,9 @@
-|Тип зміни| Ідентифікатор (A6-A10) | Подробиці змін |
-|:-------------|:-----------:|:------------:|
-|змінилась назва вразливості|A6|“Security Misconfiguration” (Неправильна конфігурація безпеки) зберегла свою назву в обох версіях 2010 і 2021, але залишилась у списку. 2010: Вразливість була на 6-му місці. 2021: Залишилась на 5-му місці, без змін у назві|
-|змінився номер сходинки у списку вразливостей|A7|У 2010 році це була “Insecure Cryptographic Storage” (Ненадійне криптографічне зберігання), а у 2021 – замінено на “Identification and Authentication Failures” (Помилки ідентифікації та автентифікації). |
-|з’явилась нова вразливість|A8|У версії 2021 “Software and Data Integrity Failures” (Помилки цілісності програмного забезпечення та даних) замінила “Failure to Restrict URL Access” (Невдале обмеження доступу до URL).|
-|зникла вразливість (вийшла за межі Top 10 найважливіших)|A9|“Insufficient Transport Layer Protection” (Недостатній захист транспортного рівня) більше не входить до OWASP Top 10 у версії 2021.|
-|декілька вразливостей були об’єднані в одну|A10|“Unvalidated Redirects and Forwards” (Невалідовані редиректи та переспрямування) більше не входить у 2021 версію. Її аспекти частково охоплені іншими вразливостями.|
+### Таблиця 2 – Опис результатів порівняння / Table 2 – Description of Comparison Results
+
+| Тип зміни / Type of Change                                        | Ідентифікатор (A1-A10) / Identifier (A1-A10) | Подробиці змін / Details of Changes                                                                 |
+|-------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------|
+| змінилась назва вразливості / Name of vulnerability changed        | A6                                          | "Security Misconfiguration" (Неправильна конфігурація безпеки) зберегла свою назву / kept its name in both versions |
+| змінився номер сходинки у списку вразливостей / Ranking changed    | A7                                          | "Insecure Cryptographic Storage" (Ненадійне криптографічне зберігання) у 2010 перетворено на "Identification and Authentication Failures" (Помилки ідентифікації та аутентифікації) у 2021 / in 2021 this vulnerability changed name and rank |
+| з'явилась нова вразливість / New vulnerability introduced          | A8                                          | У версії 2021 "Software and Data Integrity Failures" (Збої у забезпеченні цілісності ПЗ та даних) / A new vulnerability "Software and Data Integrity Failures" was introduced in 2021 |
+| зникла вразливість / Vulnerability removed                        | A9                                          | "Insufficient Transport Layer Protection" (Недостатній захист транспортного рівня) у 2010 зникла у 2021 / Removed from the 2021 list |
+| декілька вразливостей були об'єднані в одну / Multiple vulnerabilities combined | A10                                        | "Unvalidated Redirects and Forwards" (Невалідовані редиректи та переспрямування) були вилучені і частково об'єднані з іншими / removed and partially merged into other vulnerabilities |
