@@ -1,0 +1,1 @@
+[Документ Google Spreadsheets](https://docs.google.com/spreadsheets/d/1om9lfqKDm_sKf6H-aS__d6QSw42E-eWgilb4Rmjjb5c/edit?gid=1716553355#gid=1716553355)
