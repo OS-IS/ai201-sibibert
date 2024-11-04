@@ -23,3 +23,4 @@ UPDATE, DELETE до віртуальної таблиці.
 
 ![*Команди від імені admin*](images/12.png)\
 ![*Команди від імені sibibert*](images/13.png)\
+![*Команди від імені sibibert*](images/14.png)\
